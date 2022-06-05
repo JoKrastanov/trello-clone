@@ -1,9 +1,9 @@
 import axios from "axios"
 
-let baseUrl = "http://localhost:3000"
+let baseURL= "http://localhost:3000/"
 
 export const trelloNode = axios.create({
-    url : baseUrl,
+    baseURL : baseURL,
     headers : {
         "Content-type" : "application/json"
     }

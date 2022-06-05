@@ -12,7 +12,7 @@ const db=mongoose.connection;
 app.use(express.json())
 
 app.use(cors({
-    origin: ['*']
+    origin: '*'
 }));
 
 mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true});

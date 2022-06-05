@@ -35,7 +35,7 @@ function CreateList(props) {
   else {
     return (
       <div className='create-list-form'>
-      <input typeOf={'text'} className='create-list-name' placeholder='Enter list title...' autoFocus onChange={handleNameChange}/>
+      <input typeof={'text'} className='create-list-name' placeholder='Enter list title...' autoFocus onChange={handleNameChange}/>
       <div className='create-list-controls'>
         <button className='primary-button' onClick={submitList}>Add List</button>
         <button className='cancel-button' onClick={toggleCreateList}>X</button>

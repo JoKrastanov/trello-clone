@@ -53,7 +53,7 @@ const getListStyle = isDraggingOver => ({
   width: 250
 });
 
-function QuoteApp() {
+export function QuoteApp() {
   const [state, setState] = useState([getItems(10), getItems(5, 10)]);
 
   function onDragEnd(result) {

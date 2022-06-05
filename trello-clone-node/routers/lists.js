@@ -68,7 +68,6 @@ router.patch('/:id/edit/:index/:newName', getList, (req, res) => {
     }
 })
 
-
 router.patch('/:id/rename/:newName' , getList, (req, res) => {
     try {
         res.list.name = req.params.newName

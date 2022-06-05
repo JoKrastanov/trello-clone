@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import { Draggable } from 'react-beautiful-dnd'
+import React, { useState } from 'react'
+import { createCard, renameList } from '../services/list'
 import "../stylesheets/TrelloList.css"
 
 import CreateCard from './CreateCard'
 import TrelloCard from './TrelloCard'
-
-const getItemStyle = (isDragging, draggableStyle) => ({
-  // some basic styles to make the items look a bit nicer
-  userSelect: "none",
-
-  // styles we need to apply on draggables
-  ...draggableStyle
-});
 
 function TrelloList(props) {
 
@@ -20,21 +12,23 @@ function TrelloList(props) {
 
   const addCard = (name) => {
     setCards(cards.concat(name))
+    createCard(props.list._id, name)
   }
 
-  const handleNameChange = (e) => {
+  const handleNameChange = async (e) => {
     setListName(e.target.value)
+    renameList(props.list._id, e.target.value)
   }
 
   return (
         <div className='trello-list'>
           <input className='list-title' type={"text"} value={listName} onChange={handleNameChange} />
           <div className='list-card-container'>
-            {cards.map(card => (
-              <TrelloCard key={card} card={card} />
+            {cards.map((card, index) => (
+              <TrelloCard key={index} card={card} listId={props.list._id} indexNr={index}/>
             ))}
           </div>
-          <CreateCard addCard={addCard}/>
+          <CreateCard addCard={addCard} />
         </div>
   )
 }

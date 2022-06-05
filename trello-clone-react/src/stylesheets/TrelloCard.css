@@ -30,10 +30,11 @@
 .trello-card:hover > .card-edit-button {visibility: visible;}
 
 .trello-card-name {
+    width: 80%;
+    resize:none;
     font-size: .8rem;
     overflow-wrap: break-word;
     margin-block: 0rem;
     padding-block: 1em;
     padding-left: .5rem;
-
 }
