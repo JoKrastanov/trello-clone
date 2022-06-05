@@ -1,0 +1,44 @@
+.create-list {
+    display: flex;
+    align-items: center;
+    width: var(--list-width);
+    min-width: var(--list-width);
+    height: fit-content;
+    background-color: rgba(133, 133, 133, 0.582);
+    color: white;
+    padding: 0rem .5rem;
+    border-radius: var(--container-radius);
+    cursor: pointer;
+    margin-left: .2rem;
+}
+
+.create-list:hover {
+    background-color: rgba(148, 148, 148, 0.582);
+}
+
+.list-plus-icon {
+    height: 1.5rem;
+    margin-right: .5rem;
+}
+
+.create-list-name {
+    width: 95%;
+    font-size: .9rem;
+    padding-block: .5rem;
+    margin-block: .3rem;
+    margin-inline: auto;
+    border-radius: var(--container-radius);
+}
+
+.create-list-form {
+    padding: .5rem 0 0 .5rem;
+    border-radius: var(--container-radius);
+    min-width: calc(var(--list-width) + .5rem);
+    height: 5.3rem;
+    background-color: var(--list-color);
+    margin-left: .2rem;
+}
+
+.create-list-controls {
+    margin-top: .5rem;
+}

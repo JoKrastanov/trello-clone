@@ -1,0 +1,41 @@
+.create-card {
+    display: flex;
+    align-items: center;
+    border-radius: var(--container-radius);
+    padding: 0rem .5rem;
+    margin-bottom: .5rem;
+    font-size: .8rem;
+}
+
+.card-plus-icon {
+    height: 1rem;
+    margin-right: .5rem;
+}
+
+.create-card:hover {
+    background-color: var(--list-hover);
+}
+
+.create-card-name {
+    position: relative;
+    width: 99%;
+    min-height: 4.8rem;
+    border-radius: var(--container-radius);
+    font-size: .8rem;
+    cursor: pointer;
+    resize:none;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.create-card-controls {
+    display: flex;
+    align-items: center;
+
+}
+
+.create-card-controls button {
+    border: none;
+    margin-block: .5rem;
+    cursor: pointer;
+}

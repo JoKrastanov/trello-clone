@@ -1,0 +1,39 @@
+.trello-card {
+    background-color: var(--card-color);
+    position: relative;
+    width: 97%;
+    cursor: pointer;
+    border-radius: var(--container-radius);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-bottom: .5rem;
+}
+
+.trello-card:hover {
+    background-color: var(--hover-effect);
+}
+
+.card-edit-button {
+    visibility: hidden;
+    height: 1.5rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: .5rem;
+    opacity: .6;
+}
+
+.card-edit-button:hover {
+    background-color: var(--hover-effect);
+    opacity: 1;
+}
+
+.trello-card:hover > .card-edit-button {visibility: visible;}
+
+.trello-card-name {
+    font-size: .8rem;
+    overflow-wrap: break-word;
+    margin-block: 0rem;
+    padding-block: 1em;
+    padding-left: .5rem;
+
+}

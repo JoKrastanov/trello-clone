@@ -1,0 +1,35 @@
+:root {
+  --card-color: #ffffff;
+  --hover-effect: #f1f1f1;
+  --list-color: #ebecf0;
+  --list-hover: #dcdfe9;
+
+  --list-width: 15rem;
+
+  --container-radius: .2rem;
+}
+
+input, textarea {border: none;}
+
+.primary-button {
+  background-color: #0079bf;
+  color: white;
+  border-radius: var(--container-radius);
+  padding: .4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: transparent;
+  color: #6b778c;
+  margin-left: .5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-button:hover {background-color: #006ba8;}
+
+.cancel-button:hover {color: #454f60;}
